@@ -1,0 +1,48 @@
+:root {
+    --color-first: #F25A70;
+    --color-second: #7C5E99;
+    --color-third: #FFFFFF;
+
+    --color-black-first: #000000;
+}
+
+header {
+    background-color: var(--color-second);
+    font-family: 'Fira Code', monospace, sans-serif;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav>a.link::before {
+    content: "";
+    background-color: var(--color-first);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 0.5em;
+}
+
+a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--color-third);
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+#button-download {
+    background-color: var(--color-first);
+    height: 60px;
+    width: 170px;
+    box-shadow: 5px 5px var(--color-black-first);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
