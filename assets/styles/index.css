@@ -1,14 +1,20 @@
 :root {
     --color-first: #F25A70;
+    --color-first-darker: #F0425C;
     --color-second: #7C5E99;
     --color-third: #FFFFFF;
 
     --color-black-first: #000000;
+
+    --color-black-third: #171717;
 }
 
 header {
     background-color: var(--color-second);
     font-family: 'Fira Code', monospace, sans-serif;
+
+    border-bottom: 5px solid var(--color-black-third);
+    padding: 0 20px;
 }
 
 nav {
@@ -17,24 +23,30 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+
 }
 
-nav>a.link::before {
-    content: "";
-    background-color: var(--color-first);
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin-right: 0.5em;
-}
-
-a {
+nav > a {
+    display: inline-flex;
+    align-items: center;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
     color: var(--color-third);
     text-decoration: none;
+}
+
+nav > a.link {
     margin-right: 30px;
+}
+
+.link::before {
+    content: "";
+    background-color: var(--color-first);
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
 }
 
 #button-download {
@@ -45,4 +57,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#button-download:hover {
+    background-color: var(--color-first-darker);
 }
