@@ -1,24 +1,41 @@
 :root {
-    --color-first: #F25A70;
-    --color-first-darker: #F0425C;
-    --color-second: #7C5E99;
-    --color-third: #FFFFFF;
+    --color-first: #A682FF;
+    --color-second: #44475a;
+    --color-third: #f8f8f2;
+    --color-fourth: #ff79c6;
 
-    --color-black-first: #000000;
+    --color-first-highlight: #7B47FF;
 
-    --color-black-third: #171717;
+    --color-black-first: #181920;
 }
 
 header {
     background-color: var(--color-second);
     font-family: 'Fira Code', monospace, sans-serif;
 
-    border-bottom: 5px solid var(--color-black-third);
+    border-bottom: 5px solid var(--color-black-first);
     padding: 0 20px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    color: var(--color-first);
+    font-family: 'Press Start 2P', 'Fira Code', monospace, sans-serif;
+    text-shadow:  3px 3px var(--color-black-first);
+    font-size: 28px;
+    transition: transform 200ms;
+}
+
+header > h1:hover {
+    color: var(--color-first-highlight);
+    transform: scale(1.08);
 }
 
 nav {
-    height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -50,15 +67,19 @@ nav > a.link {
 }
 
 #button-download {
+    color: var(--color-black-first);
     background-color: var(--color-first);
-    height: 60px;
-    width: 170px;
+    height: 55px;
+    width: 165px;
     box-shadow: 5px 5px var(--color-black-first);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 200ms;
+
 }
 
 #button-download:hover {
-    background-color: var(--color-first-darker);
+    background-color: var(--color-first-highlight);
+    transform: scale(1.08);
 }
