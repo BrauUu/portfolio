@@ -1,12 +1,6 @@
-:root {
-    --color-first: #A682FF;
-    --color-second: #44475a;
-    --color-third: #f8f8f2;
-    --color-fourth: #ff79c6;
-
-    --color-first-highlight: #7B47FF;
-
-    --color-black-first: #181920;
+body {
+    background-color: var(--color-black-first);
+    color: var(--color-third);
 }
 
 header {
@@ -22,17 +16,9 @@ header {
     align-items: center;
 }
 
-header > h1 {
+header>h1 {
     color: var(--color-first);
-    font-family: 'Press Start 2P', 'Fira Code', monospace, sans-serif;
-    text-shadow:  3px 3px var(--color-black-first);
     font-size: 28px;
-    transition: transform 200ms;
-}
-
-header > h1:hover {
-    color: var(--color-first-highlight);
-    transform: scale(1.08);
 }
 
 nav {
@@ -40,11 +26,9 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-
-
 }
 
-nav > a {
+nav>a {
     display: inline-flex;
     align-items: center;
     font-weight: 500;
@@ -54,7 +38,7 @@ nav > a {
     text-decoration: none;
 }
 
-nav > a.link {
+nav>a.link {
     margin-right: 30px;
 }
 
@@ -66,20 +50,34 @@ nav > a.link {
     margin-right: 10px;
 }
 
-#button-download {
-    color: var(--color-black-first);
-    background-color: var(--color-first);
-    height: 55px;
-    width: 165px;
-    box-shadow: 5px 5px var(--color-black-first);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 200ms;
+.banner {
+    height: 724px;
+    background: url("https://www.notion.so/image/https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fa1%2F9d%2F14%2Fa19d149acd516549f0a2ac035b88cd35.gif?table=block&id=bfdfaa65-fb2c-4e04-bce5-083c922f60a9&spaceId=82dfa38e-fd44-4364-994b-00c386fd1032&userId=092ccf60-eb09-4fdb-98c0-ddd840275851&cache=v2") right no-repeat;
+    background-size: cover;
 
 }
 
-#button-download:hover {
-    background-color: var(--color-first-highlight);
-    transform: scale(1.08);
+.banner>.banner-content {
+    position: relative;
+    top: 116px;
+    left: 90px;
+    width: 620px;
+
+    font-family: "Press Start 2P";
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 200px;
+    background: var(--color-second);
+    box-shadow: 10px 10px 0px 0px var(--color-black-first); 
+}
+
+.buttons-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 38px;
 }
