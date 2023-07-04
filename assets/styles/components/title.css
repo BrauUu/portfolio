@@ -1,0 +1,20 @@
+h1 {
+    color: var(--color-first);
+    font-size: 40px;
+    transition: transform 200ms;
+}
+
+h1:hover {
+    color: var(--color-first-highlight);
+    transform: scale(1.08);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1, h2 {
+    font-family: 'Press Start 2P', 'Fira Code', monospace, sans-serif;
+    text-align: center;
+    text-shadow: 4px 4px var(--color-black-first);
+}
