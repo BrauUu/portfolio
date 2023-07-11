@@ -1,0 +1,24 @@
+.banner-content{
+    position: relative;
+    top: 116px;
+    left: 90px;
+    
+    display: inline-block;
+    max-width: 720px;
+
+    font-family: "Press Start 2P", monospace, sans-serif;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 42px 46px;
+    background: var(--color-second);
+    box-shadow: 10px 10px 0px 0px var(--color-black-first); 
+}
+
+.buttons-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 38px;
+}

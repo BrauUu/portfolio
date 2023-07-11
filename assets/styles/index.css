@@ -56,28 +56,3 @@ nav>a.link {
     background-size: cover;
 
 }
-
-.banner>.banner-content {
-    position: relative;
-    top: 116px;
-    left: 90px;
-    width: 620px;
-
-    font-family: "Press Start 2P";
-}
-
-.title-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    height: 200px;
-    background: var(--color-second);
-    box-shadow: 10px 10px 0px 0px var(--color-black-first); 
-}
-
-.buttons-section {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 38px;
-}
