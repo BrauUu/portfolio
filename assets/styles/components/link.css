@@ -1,0 +1,18 @@
+.link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--color-third);
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.link::before {
+    content: "";
+    background-color: var(--color-first);
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}

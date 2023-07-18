@@ -1,4 +1,4 @@
-a.button {
+.button {
     color: var(--color-third);
     background-color: var(--color-first);
     height: 55px;
@@ -8,9 +8,11 @@ a.button {
     align-items: center;
     justify-content: center;
     transition: transform 200ms;
+
+    text-decoration: none;
 }
 
-a.button:hover {
+.button:hover {
     background-color: var(--color-first-highlight);
     transform: scale(1.08);
 }

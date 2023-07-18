@@ -1,0 +1,19 @@
+.header {
+    background-color: var(--color-second);
+    font-family: 'Fira Code', monospace, sans-serif;
+
+    border-bottom: 5px solid var(--color-black-first);
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
