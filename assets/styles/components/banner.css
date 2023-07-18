@@ -1,0 +1,23 @@
+.banner {
+    height: 724px;
+    background: url("https://i.pinimg.com/originals/06/be/df/06bedfb3ed400da352159a4e4807645d.gif") right no-repeat;
+    background-size: cover;
+
+}
+
+.banner-content{
+    position: relative;
+    top: 116px;
+    left: 90px;
+    
+    display: inline-block;
+    max-width: 720px;
+
+    font-family: "Press Start 2P", monospace, sans-serif;
+}
+
+.buttons-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 38px;
+}
