@@ -1,8 +1,12 @@
 .banner {
-    height: 724px;
-    background: url("https://i.pinimg.com/originals/06/be/df/06bedfb3ed400da352159a4e4807645d.gif") right no-repeat;
+    height: 720px;
+    background-image: url("https://i.pinimg.com/originals/06/be/df/06bedfb3ed400da352159a4e4807645d.gif");
+    background-repeat: no-repeat;
     background-size: cover;
 
+
+    border-top: 5px solid var(--color-black-first);
+    border-bottom: 5px solid var(--color-black-first);
 }
 
 .banner-content{
