@@ -1,0 +1,27 @@
+.skills {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-second);
+
+    border-bottom: 5px solid var(--color-black-first);
+}
+
+.skills>.title {
+    color: white;
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+.skills>.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
+
+    margin: 60px 0;
+}
