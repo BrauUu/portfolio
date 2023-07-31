@@ -9,7 +9,7 @@
     transition: transform 200ms;
 }
 
-.title:hover {
+.title:hover {   
     color: var(--color-first-highlight);
     transform: scale(1.08);
 }

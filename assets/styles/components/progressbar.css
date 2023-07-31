@@ -1,0 +1,20 @@
+.progressbar {
+    width: 368px;
+    height: 40px;
+
+    box-sizing: border-box;
+
+    background-color: var(--color-third);
+    border: 5px solid var(--color-black-first);
+}
+
+.progressbar-active {
+    height: 100%;
+    background-color: var(--color-first);
+    transition: 0.15s;
+}
+
+.progressbar-active:hover {
+    background-color: var(--color-first-highlight);
+    cursor: pointer;
+}
