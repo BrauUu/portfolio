@@ -1,5 +1,7 @@
 .skills {
     
+    padding-top: 50px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,13 +9,6 @@
     background-color: var(--color-second);
 
     border-bottom: 5px solid var(--color-black-first);
-}
-
-.skills>.title {
-    color: white;
-    text-align: center;
-
-    margin-top: 50px;
 }
 
 .skills>.skills-wrapper {
