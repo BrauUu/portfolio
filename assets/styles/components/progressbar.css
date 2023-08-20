@@ -6,15 +6,27 @@
 
     background-color: var(--color-third);
     border: 5px solid var(--color-black-first);
-}
-
-.progressbar-active {
-    height: 100%;
-    background-color: var(--color-first);
     transition: 0.15s;
+
 }
 
-.progressbar-active:hover {
+.progressbar::-webkit-progress-bar {
+    background-color: var(--color-third);
+}
+
+.progressbar::-moz-progress-bar {
+    background-color: var(--color-first);
+}
+
+.progressbar::-webkit-progress-value {
+    background-color: var(--color-first);
+}
+
+.progressbar::-moz-progress-bar:hover {
+    background-color: var(--color-first-highlight);
+    cursor: pointer;
+}
+.progressbar::-webkit-progress-value:hover {
     background-color: var(--color-first-highlight);
     cursor: pointer;
 }
