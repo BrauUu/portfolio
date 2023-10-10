@@ -1,8 +1,5 @@
 .skills {
-
     background-color: var(--color-second);
-
-    border-bottom: 5px solid var(--color-black-first);
 }
 
 .skills>.skills-wrapper {
