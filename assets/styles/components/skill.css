@@ -1,0 +1,26 @@
+.skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 24px;
+
+    padding: 16px;
+}
+
+.skill-icon>svg {
+    height: 90px;
+}
+
+.skill-content > .skill-title{
+    font-family: 'Press Start 2P'; 
+
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    text-align: left;
+
+    margin: 0 0 16px;
+}
