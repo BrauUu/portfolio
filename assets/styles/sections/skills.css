@@ -1,10 +1,4 @@
 .skills {
-    
-    padding-top: 50px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     background-color: var(--color-second);
 
@@ -18,5 +12,5 @@
     grid-column-gap: 60px;
     grid-row-gap: 30px;
 
-    margin: 60px 0;
+    margin: 60px 0 0;
 }

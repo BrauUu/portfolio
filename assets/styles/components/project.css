@@ -1,0 +1,33 @@
+.project {
+    height: 280px;
+    width: 280px;
+
+    box-shadow: 10px 10px var(--color-third);
+    border: 2px solid var(--color-black-first);
+
+    box-sizing: border-box;
+
+}
+
+.project.-layout-1 {
+    background-color: var(--color-first);
+}
+.project.-layout-2 {
+    background-color: var(--color-second);
+}
+.project.-layout-3 {
+    background-color: var(--color-fourth);
+}
+
+.project-link {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+}
+
+.project-icon {
+    width: calc(100% - 60px);
+    align-self: center;
+    justify-self: center;
+}
