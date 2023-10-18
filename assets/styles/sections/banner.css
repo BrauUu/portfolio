@@ -6,11 +6,16 @@
 
     border-top: 5px solid var(--color-black-first);
     border-bottom: 5px solid var(--color-black-first);
+
+    position: relative;
+
 }
 
 .banner-content{
     
-    margin: 116px 0px 0px 90px;
+    position: absolute;
+    top: 116px;
+    left: 90px;
     width: 620px;
     
     font-family: "Press Start 2P", monospace, sans-serif;
@@ -23,8 +28,9 @@
 }
 
 .banner #image-author {
-    float: right;
-    margin: 140px 50px 0 0;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
     color: var(--color-third);
     text-decoration: none;
 }
