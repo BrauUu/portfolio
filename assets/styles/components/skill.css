@@ -21,6 +21,7 @@
     line-height: normal;
 
     text-align: left;
+    text-shadow: 4px 4px var(--color-black-first);
 
     margin: 0 0 16px;
 }

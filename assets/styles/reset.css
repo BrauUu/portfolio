@@ -8,6 +8,7 @@ html {
 body {
     background-color: var(--color-black-first);
     color: var(--color-third);
+    font-family: "Press Start 2P", monospace, sans-serif;
 }
 
 h2 {
