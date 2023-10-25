@@ -1,3 +1,36 @@
 .about {
-    background-color: var(--color-second);
+    background-color: var(--color-fifth);
+    border-bottom: 5px solid var(--color-black-first);
+}
+
+.about-wrapper {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+}
+
+.image {
+    height: 240px;
+    width: 240px;
+    background: url('../../images/me.png') no-repeat left;
+    background-size: contain;
+    background-color: var(--color-third);
+    border-radius: 100%;
+    border: 5px solid var(--color-black-first)
+    
+}
+
+.description {
+    font-family: 'Fira Code', monospace, sans-serif;;
+    font-size: 24px; 
+    font-weight: 300; 
+    width: 700px;
+}
+
+.highlight {
+    font-weight: 400;
+    text-shadow: 4px 4px var(--color-black-first);
+    font-family: "Press Start 2P", monospace, sans-serif;
+    color: var(--color-sixth);
+    padding: 30px 0 20px;
 }

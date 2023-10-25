@@ -1,11 +1,13 @@
 .link {
     display: inline-flex;
     align-items: center;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
     color: var(--color-third);
     text-decoration: none;
+
     margin-right: 30px;
 }
 
