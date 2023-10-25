@@ -1,5 +1,6 @@
 .projects {
     background-color: var(--color-black-second);
+    border-bottom: 5px solid var(--color-sixth);
 }
 
 .projects-wrapper {

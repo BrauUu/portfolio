@@ -8,21 +8,21 @@
     color: var(--color-first-highlight);
     transform: scale(1.08);
 }
+
 .title, .sub-title {
     font-family: 'Press Start 2P', monospace, sans-serif;
     text-align: center;
     text-shadow: 4px 4px var(--color-black-first);
 }
 
-.title._header {
+.title_header {
     font-size: 28px;
 }
 
-.title._second {
+.title_second {
     color: var(--color-third);
 }
 
-.title._second :hover {
+.title_second:hover {
     color: var(--color-first-third);
-    transform: none;
 }

@@ -9,13 +9,13 @@
 
 }
 
-.project.-layout-1 {
+.project_layout-1 {
     background-color: var(--color-first);
 }
-.project.-layout-2 {
+.project_layout-2 {
     background-color: var(--color-second);
 }
-.project.-layout-3 {
+.project_layout-3 {
     background-color: var(--color-fourth);
 }
 
