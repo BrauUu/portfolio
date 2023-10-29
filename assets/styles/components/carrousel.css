@@ -1,0 +1,63 @@
+.carrousel-container {
+    position: relative;
+    width: 100%;
+
+    margin-top: 40px;
+}
+
+.carrousel-controls {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.carrousel-controls > .carrousel-button{
+    margin-top: 83.6px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.carrousel-wrapper {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.carrousel {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.carrousel-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.carrousel-item-title {
+    font-size: 28px;
+}
+
+.carrousel-item-image {
+    height: 210px;
+    width: 330px;
+
+    border: 5px solid var(--color-black-first);
+    background-color: var(--color-third);
+}
+
+.carrousel-item-text {
+    margin-top: 40px;
+    width: 1080px;
+
+    font-size: 22px;
+    font-family: 'Fira Code', monospace, sans-serif;
+}
+
+.line {
+    width: 100%;
+    position: relative;
+    top: 45px
+}

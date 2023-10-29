@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="./assets/styles/components/skill.css">
     <link rel="stylesheet" href="./assets/styles/components/title.css">
     <link rel="stylesheet" href="./assets/styles/components/project.css">
-    <link rel="stylesheet" href="./assets/styles/components/timeline.css">
     <link rel="stylesheet" href="./assets/styles/components/carrousel.css">
 </head>
 
@@ -205,72 +204,86 @@
             </div>
         </div>
     </section>
-    <!-- <section class="content-section experience" id="experience">
+    <section class="content-section experience" id="experience">
         <h1 class="title title_second">Experience</h1>
-        <div class="container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-arrow-left">
-                <line x1="19" y1="12" x2="5" y2="12"></line>
-                <polyline points="12 19 5 12 12 5"></polyline>
+        <div class="carrousel-container">
+            <svg class="line" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5%" y1="5.5" x2="95%" y2="3.47167" stroke="black" stroke-width="5" />
+                <line x1="95%" y1="3.5" x2="100%" y2="3.5" stroke="black" stroke-width="5" stroke-dasharray="5 5" />
+                <line x1="0%" y1="5.5" x2="5%" y2="5.5" stroke="black" stroke-width="5" stroke-dasharray="5 5" />
             </svg>
-            <div class="carrousel" id="carrousel">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-item-ilustration">
-                            <div class="timeline-item-ilustration-wrapper">
-                                <span>2019</span>
-                                <svg height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="50%" y1="12" x2="50%" y2="45" stroke="black" stroke-width="5"
-                                        stroke-dasharray="5 5" />
-                                </svg>
-                                <div class="timeline-item-image">
-
-                                </div>
+            <div class="carrousel-controls">
+                <div class="carrousel-button left-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="carrousel-wrapper">
+                    <div class="carrousel">
+                        <div class="carrousel-item">
+                            <span class="carrousel-item-title">2019</span>
+                            <svg height="50" width="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="50%" y1="12" x2="50%" y2="45" stroke="black" stroke-width="5"
+                                    stroke-dasharray="5 5" />
+                            </svg>
+                            <div class="carrousel-item-image">
                             </div>
+                            <p class="carrousel-item-text">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
                         </div>
-                        <p class="experience-description">Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                            1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into electronic
-                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-item-ilustration">
-                            <div class="timeline-item-ilustration-wrapper">
-                                <span>2019</span>
-                                <svg height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="50%" y1="12" x2="50%" y2="50" stroke="black" stroke-width="5"
-                                        stroke-dasharray="5 5" />
-                                </svg>
-                                <div class="timeline-item-image">
-                                </div>
+                        <div class="carrousel-item">
+                            <span class="carrousel-item-title">2021</span>
+                            <svg height="50" width="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="50%" y1="12" x2="50%" y2="45" stroke="black" stroke-width="5"
+                                    stroke-dasharray="5 5" />
+                            </svg>
+                            <div class="carrousel-item-image">
                             </div>
+                            <p class="carrousel-item-text">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
                         </div>
-                        <p class="experience-description">Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                            1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into electronic
-                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <div class="carrousel-item">
+                            <span class="carrousel-item-title">2022</span>
+                            <svg height="50" width="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="50%" y1="12" x2="50%" y2="45" stroke="black" stroke-width="5"
+                                    stroke-dasharray="5 5" />
+                            </svg>
+                            <div class="carrousel-item-image">
+                            </div>
+                            <p class="carrousel-item-text">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <svg class="line" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="5%" y1="5.5" x2="95%" y2="3.47167" stroke="black" stroke-width="5" />
-                    <line x1="95%" y1="3.5" x2="100%" y2="3.5" stroke="black" stroke-width="5" stroke-dasharray="5 5" />
-                    <line x1="0%" y1="5.5" x2="5%" y2="5.5" stroke="black" stroke-width="5" stroke-dasharray="5 5" />
-                </svg>
+                <div class="carrousel-button right-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z">
+                        </path>
+                    </svg>
+                </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-arrow-right">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-        </div> -->
+        </div>
     </section>
     <section class="contacts content-section" id="contacts">
         <h1 class="title title_second">Contacts</h1>
