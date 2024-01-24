@@ -1,27 +1,7 @@
-function getYearsDifference(date) {
-
-    const actualDate = new Date()
-    const birthDate = new Date(date)
-
-    const actualDateYear = actualDate.getFullYear()
-    const birthDateYear = birthDate.getFullYear()
-    const actualDateMonth = actualDate.getMonth()
-    const birthDateMonth = birthDate.getMonth()
-    const actualDateDay = actualDate.getDay()
-    const birthDateDay = birthDate.getDay()
-
-    let age = actualDateYear - birthDateYear
-
-    if (actualDateMonth < birthDateMonth)
-        age--
-    else if (actualDateMonth == birthDateMonth) {
-        if (actualDateDay < birthDateDay)
-            age --
-    }
-
-    return age
-    
-}
+const [leftButton, rightButton] = document.querySelectorAll('.carrousel-button')
+const carrouselItens = document.querySelectorAll('.carrousel-item')
+let currentItem = 0
+const maxItens = carrouselItens.length - 1
 
 function scrollToItem(){
     carrouselItens[currentItem].scrollIntoView({
@@ -30,12 +10,6 @@ function scrollToItem(){
         inline: "nearest"
     })
 }
-
-const [leftButton, rightButton] = document.querySelectorAll('.carrousel-button')
-const carrouselItens = document.querySelectorAll('.carrousel-item')
-
-let currentItem = 0
-const maxItens = carrouselItens.length - 1
 
 leftButton.addEventListener('click', () => {
     if(leftButton.classList.contains("left-arrow")){
@@ -56,6 +30,31 @@ rightButton.addEventListener('click', () => {
     }
     scrollToItem()
 })
+
+function getYearsDifference(date) {
+
+    const actualDate = new Date()
+    const birthDate = new Date(date)
+
+    const actualDateYear = actualDate.getFullYear()
+    const birthDateYear = birthDate.getFullYear()
+    const actualDateMonth = actualDate.getMonth()
+    const birthDateMonth = birthDate.getMonth()
+    const actualDateDay = actualDate.getDay()
+    const birthDateDay = birthDate.getDay()
+
+    let age = actualDateYear - birthDateYear
+
+    if (actualDateMonth < birthDateMonth)
+        age--
+    else if (actualDateMonth == birthDateMonth) {
+        if (actualDateDay < birthDateDay)
+            age--
+    }
+
+    return age
+    
+}
 
 const ageEl = document.querySelector("#age")
 ageEl.textContent = getYearsDifference('2001-04-15')
