@@ -15,3 +15,21 @@
     background-color: var(--color-first-highlight);
     transform: scale(1.08);
 }
+
+.submit {
+    background-color: var(--color-fourth);
+    height: 60px;
+    color: var(--color-third);
+    font: inherit;
+    font-size: 28px;
+
+    border: 3px solid var(--color-black-first);
+    border-radius: 10px;
+
+    transition: transform 100ms;
+}
+
+.submit:hover {
+    background-color: var(--color-fourth-highlight);
+    transform: scale(1.04);
+}
