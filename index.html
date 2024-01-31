@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./assets/styles/sections/projects.css">
     <link rel="stylesheet" href="./assets/styles/sections/about.css">
     <link rel="stylesheet" href="./assets/styles/sections/experience.css">
-    <link rel="stylesheet" href="./assets/styles/sections/contacts.css">
+    <link rel="stylesheet" href="./assets/styles/sections/contact.css">
     <link rel="stylesheet" href="./assets/styles/sections/footer.css">
     <!-- Styles - Components -->
     <link rel="stylesheet" href="./assets/styles/components/box.css">
@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="./assets/styles/components/title.css">
     <link rel="stylesheet" href="./assets/styles/components/project.css">
     <link rel="stylesheet" href="./assets/styles/components/carrousel.css">
+    <link rel="stylesheet" href="./assets/styles/components/form.css">
+    <link rel="stylesheet" href="./assets/styles/components/input.css">
 </head>
 
 <body>
@@ -41,7 +43,7 @@
             <a class="link" lang="en" href="#skills">Skills</a>
             <a class="link" lang="en" href="#projects">Projects</a>
             <a class="link" lang="en" href="#experience">Experience</a>
-            <a class="link" lang="en" href="#contacts">Contacts</a>
+            <a class="link" lang="en" href="#contact">Contact</a>
             <a class="button" lang="en" href="">Download CV</a>
         </nav>
     </header>
@@ -301,8 +303,23 @@
             </div>
         </div>
     </section>
-    <section class="contacts content-section" id="contacts">
-        <h1 class="title title_second">Contacts</h1>
+    <section class="contact content-section" id="contact">
+        <h1 class="title title_second">Contact</h1>
+        <form class="form">
+            <div class="field">
+                <label for="name">Name</label>
+                <input class="input" type="text" id="name" placeholder="João Silva"/>
+            </div>
+            <div class="field">
+                <label for="email">E-mail</label>
+                <input class="input" type="email" id="email" placeholder="joaosilva@mail.com"/>
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea class="input message" id="message" placeholder="Olá, como está?"></textarea>
+            </div>
+            <input class="submit field" type="submit" value="Enviar"/>
+        </form>
     </section>
     <footer class="footer">
         <a href="https://github.com/BrauUu" target="_blank">
