@@ -19,3 +19,8 @@
     height: 200px !important;
     resize: none;
 }
+
+.invalid-input {
+    border-color: red;
+    color: red;
+}

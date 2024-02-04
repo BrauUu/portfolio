@@ -305,20 +305,23 @@
     </section>
     <section class="contact content-section" id="contact">
         <h1 class="title title_second">Contact</h1>
-        <form class="form">
+        <form id="form" class="form" novalidate>
             <div class="field">
                 <label for="name">Name</label>
-                <input class="input" type="text" id="name" placeholder="João Silva"/>
+                <input class="input" type="text" id="name" name="name" required  min="1" max="32" placeholder="João Silva"/>
+                <span class="name_help help"></span>
             </div>
             <div class="field">
                 <label for="email">E-mail</label>
-                <input class="input" type="email" id="email" placeholder="joaosilva@mail.com"/>
+                <input class="input" type="email" id="email" name="email" required  min="1" max="64" placeholder="joaosilva@mail.com"/>
+                <span class="email_help help"></span>
             </div>
             <div class="field">
                 <label for="message">Message</label>
-                <textarea class="input message" id="message" placeholder="Olá, como está?"></textarea>
+                <textarea class="input message" id="message" name="message" required min="4" max="128" placeholder="Olá, como está?"></textarea>
+                <span class="message_help help"></span>
             </div>
-            <input class="submit field" type="submit" value="Enviar"/>
+            <button id="submit" class="submit field">Enviar</button>
         </form>
     </section>
     <footer class="footer">
