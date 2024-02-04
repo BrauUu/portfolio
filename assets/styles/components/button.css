@@ -2,7 +2,7 @@
     color: var(--color-third);
     background-color: var(--color-first);
     height: 55px;
-    width: 165px;
+    width: 210px;
     box-shadow: 5px 5px var(--color-black-first);
     display: flex;
     align-items: center;

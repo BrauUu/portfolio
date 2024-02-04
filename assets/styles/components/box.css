@@ -1,7 +1,7 @@
 .box{
     display: flex;
     flex-direction: column;
-    padding: 42px 46px;
+    padding: 48px 32px;
     background: var(--color-second);
     box-shadow: 10px 10px 0px 0px var(--color-black-first); 
     gap: 12px

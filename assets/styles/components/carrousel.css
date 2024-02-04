@@ -18,6 +18,14 @@
     cursor: pointer;
 }
 
+.carrousel-controls > .carrousel-button.left-arrow{
+    margin-left: 32px;
+}
+
+.carrousel-controls > .carrousel-button.right-arrow{
+    margin-right: 32px;
+}
+
 .carrousel-wrapper {
     overflow-x: hidden;
     width: 100%;
