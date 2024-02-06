@@ -2,16 +2,37 @@
     color: var(--color-third);
     background-color: var(--color-first);
     height: 55px;
-    width: 165px;
+    width: 210px;
     box-shadow: 5px 5px var(--color-black-first);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 200ms;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .button:hover {
     background-color: var(--color-first-highlight);
     transform: scale(1.08);
+}
+
+.submit {
+    background-color: var(--color-fourth);
+    padding: 10px;
+    color: var(--color-third);
+    font: inherit;
+    font-size: 28px;
+    text-align: center;
+
+    border: 3px solid var(--color-black-first);
+    border-radius: 10px;
+
+    transition: transform 100ms;
+}
+
+.submit:hover {
+    background-color: var(--color-fourth-highlight);
+    transform: scale(1.04);
+    cursor: pointer;
 }

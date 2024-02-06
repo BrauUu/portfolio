@@ -8,6 +8,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    z-index: 1;
+
+    border-bottom: 3px solid var(--color-black-first);
 }
 
 .navigation {

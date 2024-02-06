@@ -1,0 +1,27 @@
+.input {
+    border: 3px solid var(--color-black-first);
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px 10px;
+    font: inherit;
+    font-size: 20px;
+    transition: transform 100ms;
+    box-sizing: content-box;
+}
+.input::placeholder{
+    color: var(--color-seventh);
+}
+.input:focus, .input:focus-within{
+    outline: none;
+    opacity: 0.85;
+    transform: scale(1.02);
+}
+.message {
+    height: 200px !important;
+    resize: none;
+}
+
+.invalid-input {
+    border-color: red;
+    color: red;
+}
