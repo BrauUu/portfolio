@@ -46,6 +46,12 @@
 
 .carrousel-item-title {
     font-size: 28px;
+    text-shadow: 4px 4px var(--color-black-first);
+    transition: transform 200ms;
+}
+
+.carrousel-item-title:hover {   
+    transform: scale(1.08);
 }
 
 .carrousel-item-image {

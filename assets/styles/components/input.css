@@ -6,6 +6,7 @@
     font: inherit;
     font-size: 20px;
     transition: transform 100ms;
+    box-sizing: content-box;
 }
 .input::placeholder{
     color: var(--color-seventh);

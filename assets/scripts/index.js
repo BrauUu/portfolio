@@ -91,7 +91,7 @@ function validateSubmit(event){
 }
 
 function validateLenght(field) {
-    const help_text = document.querySelector(`.${field.name.concat('_help')}`)
+    const help_text = document.querySelector(`.${field.id.concat('_help')}`)
     const fieldLength = field.value.length
     const min = field.getAttribute('min')
     const max = field.getAttribute('max')
@@ -118,7 +118,7 @@ function validateLenght(field) {
 }
 
 function validateEmail(field) {
-    const help_text = document.querySelector(`.${field.name.concat('_help')}`)
+    const help_text = document.querySelector(`.${field.id.concat('_help')}`)
 
     if (field.value.length > 0 ){
         if (field.validity.typeMismatch) {

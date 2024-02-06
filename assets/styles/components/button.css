@@ -9,6 +9,7 @@
     justify-content: center;
     transition: transform 200ms;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -33,4 +34,5 @@
 .submit:hover {
     background-color: var(--color-fourth-highlight);
     transform: scale(1.04);
+    cursor: pointer;
 }

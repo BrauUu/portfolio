@@ -38,17 +38,17 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="title title_header">BrauUu</h1>
+            <a class="title title_header" href="#banner">BrauUu</a>
             <nav class="navigation">
                 <a class="link" lang="en" href="#about">Sobre</a>
                 <a class="link" lang="en" href="#skills">Habilidades</a>
                 <a class="link" lang="en" href="#projects">Projetos</a>
                 <a class="link" lang="en" href="#experience">Experiência</a>
                 <a class="link" lang="en" href="#contact">Contato</a>
-                <a class="button" lang="en" href="">Download CV</a>
+                <a class="button" lang="en" target="_blank" href="https://docs.google.com/document/d/1JPi7TjbpPbnE0geCUyTZk_iMGkBjCcfYggmmfBNievo/edit?usp=drive_link">Download CV</a>
             </nav>
         </header>
-        <section class="banner">
+        <section class="banner" id="banner">
             <div class="banner-content">
                 <div class="box">
                     <h1 class="title">Brayan Frank</h1>
@@ -62,7 +62,8 @@
             <a id="image-author" href="https://www.instagram.com/mr.valenberg/" target="_blank">Imagem de
                 mr.valenberg</a>
         </section>
-        <section class="about content-section" id="about">
+        <div id="about" style="position: relative; top: -80px"></div>
+        <section class="about content-section">
             <h1 class="title title_second">Sobre</h1>
             <div class="about-wrapper">
                 <div class="description">
@@ -71,14 +72,15 @@
                         Atualmente tenho <span id="age">XX</span> anos e sou apaixonado por tecnologia e
                         desenvolvimento,
                         além de gostar de jogos e filmes.
-                        Por outro lado, gosto de atividades bem ativas, como trilhas, exercícios e esportes.
+                        Por outro lado, gosto de estar sempre em atividade, praticando exercícios e esportes.
                     </p>
                 </div>
                 <div class="image">
                 </div>
             </div>
         </section>
-        <section class="skills content-section" id="skills">
+        <div id="skills" style="position: relative; top: -80px"></div>
+        <section class="skills content-section">
             <h1 class="title title_second">Habilidades</h1>
             <div class="skills-wrapper">
                 <article class="skill" id="javascript">
@@ -167,7 +169,8 @@
                 </article>
             </div>
         </section>
-        <section class="projects content-section" id="projects">
+        <div id="projects" style="position: relative; top: -80px"></div>
+        <section class="projects content-section">
             <h1 class="title title_second">
                 Projetos
             </h1>
@@ -208,7 +211,8 @@
                 </div>
             </div>
         </section>
-        <section class="content-section experience" id="experience">
+        <div id="experience" style="position: relative; top: -80px"></div>
+        <section class="content-section experience">
             <h1 class="title title_second">Experiência</h1>
             <div class="carrousel-container">
                 <svg class="line" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -236,15 +240,17 @@
                                 </div>
                                 <div class="carrousel-item-text">
                                     <p>
-                                        Já no inicío de 2022 comecei uma nova jornada, em uma nova empresa, chamada
+                                        No inicío de 2022 comecei uma nova jornada, em uma nova empresa, chamada
                                         Opinionbox.
-                                        Nessa nova jornada encarei novos desafios, e diferente das experiências
+                                        Nessa nova jornada encarei novos desafios, contudo diferente das experiências
                                         passadas,
                                         agora eu
                                         seria responsável por instituir um processo de qualidade do zero.
-                                        Sendo assim, propus um determinado fluxo de trabalho, este que deveria avaliar e
-                                        propor
-                                        melhorias quando necessário.
+                                    </p>
+                                    <p>
+                                        Sendo assim, propus determinados fluxos de trabalho, artefatos e atividades, que deveriam ser avaliadas e
+                                        se necessário serem propostas
+                                        melhorias.
                                     </p>
                                 </div>
                             </div>
@@ -258,8 +264,7 @@
                                 </div>
                                 <div class="carrousel-item-text">
                                     <p>
-                                        Após pouco mais de um ano, em 2021, na Cedro Technologies, fui finalimente
-                                        efetivado.
+                                        Após pouco mais de um ano na Cedro Technologies, em 2021, fui efetivado.
                                         E com um novo cargo, surgiram novas responsabilidades e desafios. Precisei me
                                         aprimorar
                                         na automação de testes, e aprender outras técnicas de teste, como:
@@ -282,17 +287,17 @@
                                 </div>
                                 <div class="carrousel-item-text">
                                     <p>
-                                        Iniciei minha carreira em 2019, em um estágio como Analista de Qualidade, na
+                                        Iniciei minha carreira  na área de tecnologia em 2019, em um estágio como Analista de Qualidade, na
                                         empresa
                                         Cedro Technologies.
                                         Na epóca não sabia quase nada sobre desenvolvimento de software e não tinha
-                                        ídeia do
+                                        ideia do
                                         que era ser um analista de qualidade.
                                     </p>
                                     <p>
                                         Com o passar dos meses tive contato com diversas ferramentas, metodologias,
                                         tecnologias e pessoas dos mais diferentes tipos.
-                                        Lá aprendi e aprimorei conceitos como: GIT, JavaScript, testes manuais e teste
+                                        Lá aprendi e aprimorei conceitos como: GIT, JavaScript, testes manuais e testes
                                         automatizados com Cypress, além de softskills, como: cooperação, adaptabilidade
                                         e
                                         resiliência.
@@ -311,11 +316,12 @@
                 </div>
             </div>
         </section>
-        <section class="contact content-section" id="contact">
+        <div id="contact" style="position: relative; top: -80px"></div>
+        <section class="contact content-section">
             <h1 class="title title_second">Contato</h1>
             <form id="form" class="form" novalidate>
                 <div class="field">
-                    <label for="name">Nome:</label>
+                    <label for="name">Nome</label>
                     <input class="input" type="text" id="name" required min="1" max="32" placeholder="Fulano" />
                     <span class="name_help help"></span>
                 </div>
@@ -331,7 +337,7 @@
                         placeholder="Olá, tudo bem?"></textarea>
                     <span class="message_help help"></span>
                 </div>
-                <button id="submit" class="submit field">Enviar</button>
+                <input id="submit" type="submit" class="submit field" value="Enviar"></input>
             </form>
         </section>
         <footer class="footer">
