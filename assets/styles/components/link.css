@@ -18,3 +18,7 @@
     height: 10px;
     margin-right: 10px;
 }
+
+.link:hover{
+    color: var(--color-third-highlight);
+}

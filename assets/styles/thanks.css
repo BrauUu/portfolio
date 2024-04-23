@@ -1,0 +1,16 @@
+.thanks {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.thanks > .title {
+    margin-bottom: 20px;
+}
+
+.thanks > .return {
+    text-decoration: none;
+    color: var(--color-first)
+}

@@ -24,9 +24,7 @@
 
 .progressbar::-moz-progress-bar:hover {
     background-color: var(--color-first-highlight);
-    cursor: pointer;
 }
 .progressbar::-webkit-progress-value:hover {
     background-color: var(--color-first-highlight);
-    cursor: pointer;
 }
