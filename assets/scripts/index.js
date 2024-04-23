@@ -3,6 +3,14 @@ const carrouselItens = document.querySelectorAll('.carrousel-item')
 let currentItem = 0
 const maxItens = carrouselItens.length - 1
 
+window.addEventListener('load', () => {
+    carrouselItens[currentItem].scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest"
+    })
+})
+
 function scrollToItem(){
     carrouselItens[currentItem].scrollIntoView({
         behavior: "smooth",
@@ -14,8 +22,12 @@ function scrollToItem(){
 leftButton.addEventListener('click', () => {
     if(leftButton.classList.contains("left-arrow")){
         currentItem -= 1
-        if(currentItem < 0) {
-            currentItem = maxItens
+        if(currentItem == 0) {
+            leftButton.classList.add('not-visible')
+        }
+        else {
+            rightButton.classList.remove('not-visible')
+            leftButton.classList.remove('not-visible')
         }
     }
     scrollToItem()
@@ -24,14 +36,18 @@ leftButton.addEventListener('click', () => {
 rightButton.addEventListener('click', () => {
     if(rightButton.classList.contains("right-arrow")){
         currentItem += 1
-        if(currentItem > maxItens) {
-            currentItem = 0
+        if(currentItem == maxItens) {
+            rightButton.classList.add('not-visible')
+        }
+        else {
+            rightButton.classList.remove('not-visible')
+            leftButton.classList.remove('not-visible')
         }
     }
     scrollToItem()
 })
 
-function getYearsDifference(date) {
+function getAge(date) {
 
     const actualDate = new Date()
     const birthDate = new Date(date)
@@ -40,13 +56,13 @@ function getYearsDifference(date) {
     const birthDateYear = birthDate.getFullYear()
     const actualDateMonth = actualDate.getMonth()
     const birthDateMonth = birthDate.getMonth()
-    const actualDateDay = actualDate.getDay()
-    const birthDateDay = birthDate.getDay()
+    const actualDateDay = actualDate.getDate()
+    const birthDateDay = birthDate.getDate()
 
     let age = actualDateYear - birthDateYear
-
-    if (actualDateMonth < birthDateMonth)
+    if (actualDateMonth < birthDateMonth){
         age--
+    }
     else if (actualDateMonth == birthDateMonth) {
         if (actualDateDay < birthDateDay)
             age--
@@ -134,5 +150,5 @@ function validateEmail(field) {
 }
 
 const ageEl = document.querySelector("#age")
-ageEl.textContent = getYearsDifference('2001-04-15')
+ageEl.textContent = getAge('2001-04-15')
 

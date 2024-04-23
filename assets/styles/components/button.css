@@ -9,7 +9,6 @@
     justify-content: center;
     transition: transform 200ms;
     text-decoration: none;
-    cursor: pointer;
 }
 
 .button:hover {

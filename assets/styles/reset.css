@@ -21,6 +21,14 @@ h2 {
     font-size: 30px;
 }
 
+a {
+    cursor: pointer;
+}
+
+p, span, h1, h2, h3 {
+    cursor: default;
+}
+
 .container {
     max-width: 1920px;
     width: 100%;
