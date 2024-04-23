@@ -1,14 +1,11 @@
 const [leftButton, rightButton] = document.querySelectorAll('.carrousel-button')
 const carrouselItens = document.querySelectorAll('.carrousel-item')
+const carrouseWrapper = document.querySelector('.carrousel-wrapper')
 let currentItem = 0
 const maxItens = carrouselItens.length - 1
 
 window.addEventListener('load', () => {
-    carrouselItens[currentItem].scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "nearest"
-    })
+   carrouseWrapper.scroll(0,0)
 })
 
 function scrollToItem(){
