@@ -4,5 +4,12 @@
     padding: 48px 32px;
     background: var(--color-second);
     box-shadow: 10px 10px 0px 0px var(--color-black-first); 
-    gap: 12px
+    gap: 12px;
+    word-break: break-word;
+}
+
+@media screen and (max-width: 520px) {
+    .box {
+        padding: 24px 16px;
+    }
 }

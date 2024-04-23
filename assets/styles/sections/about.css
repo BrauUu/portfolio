@@ -5,8 +5,17 @@
 
 .about-wrapper {
     display: flex;
-    gap: 120px;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+
+    max-width: 1080px;
+    width: 100%;
+
+    gap: 20px;
+
+    margin-top: 30px;
+    padding: 0px 30px;
 }
 
 .image {
@@ -32,5 +41,18 @@
     text-shadow: 4px 4px var(--color-black-first);
     font-family: "Press Start 2P", monospace, sans-serif;
     color: var(--color-sixth);
-    padding: 30px 0 20px;
+    margin: 0 0 20px;
+}
+
+@media screen and (max-width: 1020px) {
+    .about-wrapper{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .description {
+        font-size: 20px;
+    }
 }

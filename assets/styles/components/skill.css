@@ -4,8 +4,6 @@
     align-items: center;
 
     gap: 24px;
-
-    padding: 16px;
 }
 
 .skill-icon>svg {
@@ -15,7 +13,7 @@
 .skill-content > .skill-title{
     font-family: 'Press Start 2P'; 
 
-    font-size: 25px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -24,4 +22,21 @@
     text-shadow: 4px 4px var(--color-black-first);
 
     margin: 0 0 16px;
+}
+
+@media screen and (max-width: 550px) {
+    .skill-content > .skill-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .skill-content > .skill-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .skill-icon>svg {
+        height: 60px;
+    }
 }

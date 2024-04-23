@@ -28,3 +28,18 @@
 .progressbar::-webkit-progress-value:hover {
     background-color: var(--color-first-highlight);
 }
+
+@media screen and (max-width: 550px) {
+    .progressbar {
+        width: 300px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .progressbar {
+        width: 250px;
+        height: 30px;
+    }
+}
+

@@ -4,11 +4,11 @@
 }
 
 .projects-wrapper {
-    margin: 50px 0 0;
+    margin: 50px 30px 0;
+    max-width: 1200px;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1150px;
     gap: 100px 150px;
 }
