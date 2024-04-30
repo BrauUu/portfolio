@@ -1,6 +1,7 @@
 .link {
     display: inline-flex;
     align-items: center;
+    padding: 20px;
 
     font-weight: 500;
     font-size: 20px;
@@ -8,7 +9,7 @@
     color: var(--color-third);
     text-decoration: none;
 
-    margin-right: 30px;
+    padding: 10px;
 }
 
 .link::before {
