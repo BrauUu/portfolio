@@ -18,6 +18,12 @@
     width: 100%;
     
 }
+.form > .field > label{
+    font-family: "Press Start 2P";
+    text-shadow: 4px 4px var(--color-black-first);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
 
 .form > .field > .help{
     font-size: 16px;

@@ -24,9 +24,13 @@
     font-size: 28px;
     text-align: center;
 
-    border: 3px solid var(--color-black-first);
+    border: 5px solid var(--color-black-first);
 
     transition: transform 100ms;
+
+    font-family: "Press Start 2P";
+    text-shadow: 4px 4px var(--color-black-first);
+    font-size: 22px;
 }
 
 .submit:hover {

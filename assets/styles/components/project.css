@@ -5,7 +5,7 @@
     cursor: pointer;
 
     box-shadow: 10px 10px var(--color-third);
-    border: 2px solid var(--color-black-first);
+    border: 5px solid var(--color-black-first);
 
     box-sizing: border-box;
 
