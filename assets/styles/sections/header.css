@@ -13,7 +13,7 @@
     max-width: 1920px;
     z-index: 2;
 
-    border-bottom: 3px solid var(--color-black-first);
+    border-bottom: 5px solid var(--color-black-first);
 }
 
 .controls {
@@ -63,7 +63,7 @@
         height: 0;
         background-color: var(--color-second);
         width: 100%;
-        border-bottom: 3px solid var(--color-black-first);
+        border-bottom: 5px solid var(--color-black-first);
         z-index: 3;
         overflow: hidden;
 
