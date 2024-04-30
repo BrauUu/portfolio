@@ -1,6 +1,5 @@
 .input {
     border: 3px solid var(--color-black-first);
-    border-radius: 10px;
     height: 30px;
     padding: 5px 10px;
     font: inherit;

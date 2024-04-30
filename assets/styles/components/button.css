@@ -1,7 +1,7 @@
 .button {
     color: var(--color-third);
     background-color: var(--color-first);
-    height: 55px;
+    padding: 15px;
     width: 210px;
     box-shadow: 5px 5px var(--color-black-first);
     display: flex;
@@ -25,7 +25,6 @@
     text-align: center;
 
     border: 3px solid var(--color-black-first);
-    border-radius: 10px;
 
     transition: transform 100ms;
 }
