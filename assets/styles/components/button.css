@@ -25,7 +25,6 @@
     text-align: center;
 
     border: 3px solid var(--color-black-first);
-    border-radius: 10px;
 
     transition: transform 100ms;
 }
