@@ -28,6 +28,11 @@
     display: grid;
 }
 
+.disabled {
+  cursor: default;
+  filter: grayscale(100%);
+}
+
 .project-icon {
     width: calc(100% - 60px);
     align-self: center;
