@@ -1,4 +1,5 @@
 # Portfolio
-Portfolio developted in the curso-html-e-css-feliz
+Portfolio developted in: Curso HTML e CSS Feliz
 
+### Can be acessed here:
 https://brauuu.github.io/portfolio/
