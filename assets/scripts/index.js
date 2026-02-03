@@ -1,6 +1,7 @@
 const [leftButton, rightButton] = document.querySelectorAll('.carrousel-button')
 const carrouselItens = document.querySelectorAll('.carrousel-item')
 const carrouseWrapper = document.querySelector('.carrousel-wrapper')
+const experienceSection = document.querySelector('#experience')
 let currentItem = 0
 const maxItens = carrouselItens.length - 1
 
@@ -14,6 +15,10 @@ function scrollToItem(){
         block: "center",
         inline: "nearest"
     })
+    window.scrollTo({
+    top: experienceSection.getBoundingClientRect().top + window.pageYOffset,
+    behavior: 'smooth'
+});
 }
 
 leftButton.addEventListener('click', () => {
